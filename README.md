@@ -1,4 +1,4 @@
-YoCode
+### YoCase
 An ecommerce app that allows to customize your phone case before it is shipped
 
 ## Getting Started
