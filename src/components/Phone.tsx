@@ -1,6 +1,6 @@
 import { cn } from '@/lib/utils'
 import darkTemplate from "../../public/phone-template-dark-edges.png";
-import lightTemplate from "../../publiC/phone-template-white-edges.png";
+import lightTemplate from "../../public/phone-template-white-edges.png";
 import React, { HTMLAttributes } from 'react'
 import Image from 'next/image';
 
