@@ -3,9 +3,10 @@ import darkTemplate from "../../public/phone-template-dark-edges.png";
 import lightTemplate from "../../public/phone-template-white-edges.png";
 import React, { HTMLAttributes } from 'react'
 import Image, { StaticImageData } from 'next/image';
+import { StaticImport } from 'next/dist/shared/lib/get-img-props';
 
 interface PhoneProps extends HTMLAttributes<HTMLDivElement> {
-    imgSrc: StaticImageData,
+    imgSrc: string | StaticImport,
     dark?: boolean
 }
 const Phone = ({ imgSrc, className, dark = false, ...props} : PhoneProps) => {

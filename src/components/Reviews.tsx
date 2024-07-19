@@ -76,7 +76,7 @@ function ReviewColumn({
 }
 
 interface ReviewProps extends HTMLAttributes<HTMLDivElement> {
-  imgSrc: StaticImageData
+  imgSrc: string
 }
 
 function Review({ imgSrc, className, ...props }: ReviewProps) {
