@@ -13,9 +13,12 @@ import horse from '../../public/horse.jpg'
 import horsePhone from '../../public/horse_phone.jpg'
 import line from '../../public/line.png'
 import arrow from '../../public/arrow.png'
-import testimonial from '../../public/testimonials/1.jpg'
+import testimonial from '../../public/testimonials/2.jpg'
 import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 import Phone from '@/components/Phone';
+import { Icons } from '@/components/Icons';
+import { Reviews } from '@/components/Reviews';
+import { buttonVariants } from '@/components/ui/button';
 
 
 export default function Home() {
@@ -131,7 +134,7 @@ export default function Home() {
               What our{' '}
               <span className='relative px-2'>
                 customers{' '}
-                {/* <Icons.underline className='hidden sm:block pointer-events-none absolute inset-x-0 -bottom-6 text-green-500' /> */}
+                <Icons.underline className='hidden sm:block pointer-events-none absolute inset-x-0 -bottom-6 text-green-500' />
               </span>{' '}
               say
             </h2>
@@ -214,7 +217,7 @@ export default function Home() {
         </MaxWidthWrapper>
 
         <div className='pt-16'>
-          {/* <Reviews /> */}
+          <Reviews />
         </div>
       </section>
 
@@ -270,7 +273,7 @@ export default function Home() {
               print warranty
             </li>
 
-            {/* <div className='flex justify-center'>
+            <div className='flex justify-center'>
               <Link
                 className={buttonVariants({
                   size: 'lg',
@@ -279,7 +282,7 @@ export default function Home() {
                 href='/configure/upload'>
                 Create your case now <ArrowRight className='h-4 w-4 ml-1.5' />
               </Link>
-            </div> */}
+            </div>
           </ul>
         </MaxWidthWrapper>
       </section>
