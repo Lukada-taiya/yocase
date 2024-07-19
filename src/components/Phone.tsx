@@ -11,9 +11,9 @@ interface PhoneProps extends HTMLAttributes<HTMLDivElement> {
 const Phone = ({ imgSrc, className, dark = false, ...props} : PhoneProps) => {
   return (
     <div className={cn("relative pointer-events-none z-50 overflow-hidden", className)} {...props}>
-        <Image src={dark ? darkTemplate: lightTemplate} alt="phone image" className="pointer-events-none select-none z-50"/>
-        <div className='absolute -z-10  inset-0'>
-            <Image src={imgSrc} alt="overlaying phone image" className="object-cover"/>
+        <Image height={896} width={1831} src={dark ? darkTemplate: lightTemplate} alt="phone image" className="pointer-events-none z-50 select-none"/>
+        <div className='absolute -z-10 inset-0'>
+            <Image height={896} width={1831} src={imgSrc} alt="overlaying phone image" className="object-cover min-w-full min-h-full"/>
         </div>
     </div>
   )
